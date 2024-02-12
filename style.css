@@ -134,15 +134,6 @@ html{
     height: 10px;
 }
 
-.desktop .rectangle-2 {
-    position: absolute;
-    width: 448px;
-    height: 401px;
-    top: 943px;
-    left: 501px;
-    background-color: #d9d9d9;
-}
-
 .desktop .groupe-nav {
     position: fixed;
     width: 1361px;
@@ -187,8 +178,6 @@ html{
   transform: scale(1.25); 
 }
 
-
-
 .desktop .rectangle-3 {
     position: absolute;
     width: 164px;
@@ -196,7 +185,6 @@ html{
     top: 0;
     left: 9px;
 }
-
 
 .desktop .text-wrapper-2 {
     position: absolute;
