@@ -224,6 +224,7 @@ html{
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
+    cursor: pointer;
 }
 
 .desktop .branche-gauche {
@@ -320,8 +321,16 @@ html{
 
 
 .Entrées{
-    transform: translate(-50%, -50%);
-    background-color: white;
-    margin-left: 150px;
-    margin-right: 150px;
+    text-align: center;
+    background-color: #1d2c40;
+    position: relative;
+}
+
+.Entrées p{
+    background-color: black;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -90%;
+    position: relative;
 }
