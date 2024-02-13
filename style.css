@@ -179,13 +179,6 @@ html{
   transform: scale(1.25); 
 }
 
-.desktop .rectangle-3 {
-    position: absolute;
-    width: 164px;
-    height: 64px;
-    top: 0;
-    left: 9px;
-}
 
 .desktop .text-wrapper-2 {
     position: absolute;
@@ -211,15 +204,6 @@ html{
     top: 57px;
 }
 
-.desktop .div-wrapper {
-    position: relative;
-    width: 164px;
-    height: 64px;
-    left: -4px;
-    background-image: url(./img/rectangle-3.svg);
-    background-size: 100% 100%;
-    transition: transform .2s;
-}
 .div-wrapper:hover{
     -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */

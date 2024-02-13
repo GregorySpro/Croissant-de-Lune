@@ -1,6 +1,7 @@
 let Boissons = []
 let Plats = []
 let Desserts = []
+let Entrees = []
 
 let Menu = {
     ajouterBoisson: function(nom, prix, photo, description){
@@ -33,5 +34,15 @@ let Menu = {
         Desserts.push(dessert);
     },
 
-    
+    ajouterEntree: function(nom, prix, photo, description){
+        let entree = {
+            nomEntree: nom,
+            prixEntree: prix,
+            photoEntree: photo,
+            descriptionEntree: description,
+        }
+        Entrees.push(entree);
+    }
+
+
 }
