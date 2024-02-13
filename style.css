@@ -316,3 +316,12 @@ html{
 #caroussel{
     width: 77%;
 }
+
+
+
+.Entrées{
+    transform: translate(-50%, -50%);
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+}
