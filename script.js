@@ -1,3 +1,4 @@
+let Boissons = []
 let Menu = {
     ajouterBoisson: function(nom, prix, photo, description){
         let boisson = {
@@ -6,5 +7,6 @@ let Menu = {
             photoBoisson: photo,
             descriptionBoisson: description,
         }
+        Boissons.push(boisson);
     }
 }
