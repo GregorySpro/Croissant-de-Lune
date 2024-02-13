@@ -326,7 +326,7 @@ html{
     position: relative;
 }
 
-.Entrées p{
+#Entrées p{
     background-color: black;
     color: white;
     margin-left: 10%;
