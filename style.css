@@ -31,12 +31,13 @@ html{
 }
 
 .desktop .eiffel-tower {
-    position: absolute;
+    position: relative;
     width: 894px;
     height: 1731px;
     top: 0;
-    left: 251px;
     object-fit: cover;
+    transition: translate(-50%,-50%);
+    left: 17.8%;
 }
 
 .desktop .group {
