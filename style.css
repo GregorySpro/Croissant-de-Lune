@@ -38,6 +38,7 @@ html{
     object-fit: cover;
     transition: translate(-50%,-50%);
     left: 17.8%;
+    z-index: 1;
 }
 
 .desktop .group {
