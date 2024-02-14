@@ -134,4 +134,45 @@ function ajouter(){
         Plats = []
         
     }
+
+    else if (type == 'entrée'){
+        let nouvelle_entrée = Menu.ajouterEntree(nom, prix, type, description);
+        let nouvel_objet = document.createElement('div');
+        nouvel_objet.className = "item";
+        
+
+        let Titre_Entree = document.createElement('h4');
+        Titre_Entree.textContent = Entrees[0].nomEntree;
+        Titre_Entree.className = "TitreObjet";
+
+
+        let Description_Entree = document.createElement('p');
+        Description_Entree.textContent = Entrees[0].descriptionEntree;
+        let DivDescription = document.createElement('div');
+        DivDescription.className = "DivDescription";
+        Description_Entree.className = "DescriptionObjet";
+        DivDescription.appendChild(Description_Entree);
+
+
+        let Prix_Entree = document.createElement('h3');
+        Prix_Entree.textContent = Entrees[0].prixEntree + ' €';
+        Prix_Entree.className = "PrixObjet";
+
+
+        let Photo_Entree = document.createElement('img');
+        Photo_Entree.src = 'img/Logo.png';
+        Photo_Entree.className = "PhotoObjet";
+
+
+        nouvel_objet.appendChild(Titre_Entree);
+        nouvel_objet.appendChild(Photo_Entree);
+        nouvel_objet.appendChild(DivDescription);
+        nouvel_objet.appendChild(Prix_Entree);
+        
+
+
+        document.getElementById('Entrées').appendChild(nouvel_objet);
+        Entrees = []
+        
+    }
 }
