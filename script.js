@@ -57,26 +57,31 @@ function ajouter(){
     if (type == 'boisson'){
         let nouvelle_boisson = Menu.ajouterBoisson(nom, prix, type, description);
         let nouvel_objet = document.createElement('div');
+        let retour_ligne = document.createElement('br');
         nouvel_objet.className = "item";
         
 
         let Titre_boisson = document.createElement('h4');
-        Titre_boisson.textContent = Boissons.nomBoisson;
+        Titre_boisson.textContent = Boissons[0].nomBoisson;
+        Titre_boisson.className = "TitreObjet";
 
         let Description_boisson = document.createElement('p');
-        Description_boisson.textContent = Boissons.descriptionBoisson;
+        Description_boisson.textContent = Boissons[0].descriptionBoisson;
+        Description_boisson.className = "DescriptionObjet";
 
         let Prix_boisson = document.createElement('h3');
-        Prix_boisson.textContent = Boissons.prixBoisson;
+        Prix_boisson.textContent = Boissons[0].prixBoisson;
+        Prix_boisson.className = "PrixObjet";
 
 
         nouvel_objet.appendChild(Titre_boisson);
+        nouvel_objet.appendChild(retour_ligne);
         nouvel_objet.appendChild(Prix_boisson);
         nouvel_objet.appendChild(Description_boisson);
 
 
         document.getElementById('Entrées').appendChild(nouvel_objet);
-
+        Boissons = []
         
     }
 }

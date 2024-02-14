@@ -319,18 +319,18 @@ html{
 }
 
 
-
-.Entrées{
-    text-align: center;
-    background-color: #1d2c40;
-    position: relative;
-}
-
-#Entrées p{
-    background-color: black;
-    color: white;
+#Entrées{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: -90%;
     position: relative;
+    background-color: brown;
+}
+.item{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
 }
