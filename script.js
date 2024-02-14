@@ -90,8 +90,48 @@ function ajouter(){
         
 
 
-        document.getElementById('Entrées').appendChild(nouvel_objet);
+        document.getElementById('Boissons').appendChild(nouvel_objet);
         Boissons = []
+        
+    }
+    else if (type == 'plat'){
+        let nouveau_plat = Menu.ajouterPlat(nom, prix, type, description);
+        let nouvel_objet = document.createElement('div');
+        nouvel_objet.className = "item";
+        
+
+        let Titre_Plat = document.createElement('h4');
+        Titre_Plat.textContent = Plats[0].nomPlat;
+        Titre_Plat.className = "TitreObjet";
+
+
+        let Description_Plat = document.createElement('p');
+        Description_Plat.textContent = Plats[0].descriptionPlat;
+        let DivDescription = document.createElement('div');
+        DivDescription.className = "DivDescription";
+        Description_Plat.className = "DescriptionObjet";
+        DivDescription.appendChild(Description_Plat);
+
+
+        let Prix_Plat = document.createElement('h3');
+        Prix_Plat.textContent = Plats[0].prixPlat + ' €';
+        Prix_Plat.className = "PrixObjet";
+
+
+        let Photo_Plat = document.createElement('img');
+        Photo_Plat.src = 'img/Logo.png';
+        Photo_Plat.className = "PhotoObjet";
+
+
+        nouvel_objet.appendChild(Titre_Plat);
+        nouvel_objet.appendChild(Photo_Plat);
+        nouvel_objet.appendChild(DivDescription);
+        nouvel_objet.appendChild(Prix_Plat);
+        
+
+
+        document.getElementById('Plats').appendChild(nouvel_objet);
+        Plats = []
         
     }
 }
