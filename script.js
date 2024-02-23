@@ -133,9 +133,7 @@ function ajouter(){
         document.getElementById('Plats').appendChild(nouvel_objet);
         Plats = []
         
-    }
-
-    else if (type == 'entrée'){
+    }else if (type == 'entrée'){
         let nouvelle_entrée = Menu.ajouterEntree(nom, prix, type, description);
         let nouvel_objet = document.createElement('div');
         nouvel_objet.className = "item";
@@ -173,6 +171,45 @@ function ajouter(){
 
         document.getElementById('Entrées').appendChild(nouvel_objet);
         Entrees = []
+        
+    }else if (type == 'dessert'){
+        let nouveau_dessert = Menu.ajouterDessert(nom, prix, type, description);
+        let nouvel_objet = document.createElement('div');
+        nouvel_objet.className = "item";
+        
+
+        let Titre_Dessert = document.createElement('h4');
+        Titre_Dessert.textContent = Desserts[0].nomDessert;
+        Titre_Dessert.className = "TitreObjet";
+
+
+        let Description_Dessert = document.createElement('p');
+        Description_Dessert.textContent = Desserts[0].descriptionDessert;
+        let DivDescription = document.createElement('div');
+        DivDescription.className = "DivDescription";
+        Description_Dessert.className = "DescriptionObjet";
+        DivDescription.appendChild(Description_Dessert);
+
+
+        let Prix_Dessert = document.createElement('h3');
+        Prix_Dessert.textContent = Desserts[0].prixDessert + ' €';
+        Prix_Dessert.className = "PrixObjet";
+
+
+        let Photo_Dessert = document.createElement('img');
+        Photo_Dessert.src = 'img/Logo.png';
+        Photo_Dessert.className = "PhotoObjet";
+
+
+        nouvel_objet.appendChild(Titre_Dessert);
+        nouvel_objet.appendChild(Photo_Dessert);
+        nouvel_objet.appendChild(DivDescription);
+        nouvel_objet.appendChild(Prix_Dessert);
+        
+
+
+        document.getElementById('Desserts').appendChild(nouvel_objet);
+        Desserts = []
         
     }
 }
